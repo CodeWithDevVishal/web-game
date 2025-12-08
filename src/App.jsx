@@ -1,9 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect, useState } from 'react'
+
 import './App.css'
-import { Route, Routes } from 'react-router-dom'
+import { Outlet, Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
 import TicTacToe from './components/TicTacToe'
+import CustomNavigation from './components/CustomNavigation'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,8 +12,12 @@ function App() {
   return (
     <>
       <div>
+        <CustomNavigation />
+        <Outlet />
+
         <Routes >
-          <Route path="/" element={<TicTacToe/>}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/tictactoe" element={<TicTacToe />} />
         </Routes>
       </div>
     </>

@@ -1,1 +1,10 @@
- 
+ .homettt{
+    margin: 1rem;
+    padding: 0.5rem;
+    border: solid white ;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size:x-large;
+    font-weight:bolder;
+ }

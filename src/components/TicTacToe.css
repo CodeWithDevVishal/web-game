@@ -1,0 +1,130 @@
+ /* choose player */
+
+ .choosePlayer {
+     display: flex;
+     justify-content: center;
+     gap: 1rem;
+     /* spacing between buttons */
+     margin: 1rem;
+     flex-wrap: wrap;
+     /* allow wrapping on small screens */
+ }
+
+ .choosePlayer button {
+     padding: 1rem 2rem;
+     /* smaller, scalable padding */
+     width: clamp(120px, 40vw, 250px);
+     /* responsive width */
+     border-radius: 1.5rem;
+     font-size: clamp(1.2rem, 3vw, 2rem);
+     /* responsive font */
+     font-weight: bolder;
+     cursor: pointer;
+ }
+
+ /* ____________________________________ */
+ .ttt {
+     margin: 1rem;
+     padding: 0.5rem;
+     border: solid white;
+     border-radius: 10px;
+     background-color: white;
+     color: black;
+     font-size: x-large;
+     font-weight: bolder;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 70vh;
+ }
+
+ /* GRID CONTAINER — responsive */
+ .container {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     /* 3 equal columns */
+     gap: 0;
+     /* No gaps since borders define lines */
+     width: 90vw;
+     /* Fit screen width */
+     max-width: 300px;
+     /* Don't grow too large */
+     aspect-ratio: 1 / 1;
+ }
+
+ .block {
+     font-size: clamp(20px, 5vw, 40px);
+     background-color: white;
+     color: white;
+     border: solid black;
+     height: 2.5em;
+     width: 4;
+ }
+
+ .block:hover {
+     background-color: rgba(0, 0, 0, 0.925);
+ }
+
+ @media screen and (max-width: 425px) {
+     .block {
+         font-size: clamp(20px, 5vw, 40px);
+         background-color: black;
+         color: white;
+         border: solid white;
+         height:4.5em;
+         width: 4;
+     }
+
+     .block:hover {
+         background-color: rgba(0, 0, 0, 0.925);
+     }
+ }
+
+ /* ................................................................ */
+ .blockTL {
+     border-right: solid black;
+     border-bottom: solid black;
+ }
+
+ .blockTC {
+     border-right: solid black;
+     border-bottom: solid black;
+     border-left: solid black;
+ }
+
+ .blockTR {
+     border-left: solid black;
+     border-bottom: solid black;
+ }
+
+ .blockCL {
+     border-top: solid black;
+     border-right: solid black;
+     border-bottom: solid black;
+ }
+
+ .blockCC {
+     border: solid black;
+ }
+
+ .blockCR {
+     border-top: solid black;
+     border-bottom: solid black;
+     border-left: solid black;
+ }
+
+ .blockBL {
+     border-top: solid black;
+     border-right: solid black;
+ }
+
+ .blockBC {
+     border-top: solid black;
+     border-right: solid black;
+     border-left: solid black;
+ }
+
+ .blockBR {
+     border-top: solid black;
+     border-left: solid black;
+ }

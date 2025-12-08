@@ -3,7 +3,7 @@ import TicTacToeSlice from "../slice/TicTacToeSlice"
 
 const store = configureStore({
     reducer:{
-        TicTacToe:TicTacToeSlice,
+        TicTacToe:TicTacToeSlice
     },
     devTools:true
 })
