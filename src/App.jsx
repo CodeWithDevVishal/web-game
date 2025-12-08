@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
 import './App.css'
-import { Outlet, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import TicTacToe from './components/TicTacToe'
 import CustomNavigation from './components/CustomNavigation'
@@ -13,7 +13,6 @@ function App() {
     <>
       <div>
         <CustomNavigation />
-        {/* <Outlet /> */}
 
         <Routes >
           <Route path='/web-game/'>
