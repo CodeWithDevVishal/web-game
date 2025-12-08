@@ -16,7 +16,7 @@ function App() {
         <Outlet />
 
         <Routes >
-          <Route path="" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/tictactoe" element={<TicTacToe />} />
         </Routes>
       </div>
