@@ -15,10 +15,10 @@ function App() {
         <CustomNavigation />
 
         <Routes >
-          <Route path='/web-game/'>
+          {/* <Route path='/web-game/'> */}
             <Route path="" element={<Home />} />
-            <Route path="tictactoe" element={<TicTacToe />} />
-          </Route>
+            <Route path="/tictactoe" element={<TicTacToe />} />
+          {/* </Route> */}
         </Routes>
       </div>
     </>
