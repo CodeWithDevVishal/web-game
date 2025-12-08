@@ -13,11 +13,13 @@ function App() {
     <>
       <div>
         <CustomNavigation />
-        <Outlet />
+        {/* <Outlet /> */}
 
         <Routes >
-          <Route path="/" element={<Home />} />
-          <Route path="/tictactoe" element={<TicTacToe />} />
+          <Route path='/web-game/'>
+            <Route path="" element={<Home />} />
+            <Route path="tictactoe" element={<TicTacToe />} />
+          </Route>
         </Routes>
       </div>
     </>

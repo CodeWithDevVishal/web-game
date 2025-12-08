@@ -50,13 +50,13 @@
      max-width: 300px;
      /* Don't grow too large */
      aspect-ratio: 1 / 1;
+
  }
 
  .block {
      font-size: clamp(20px, 5vw, 40px);
-     background-color: white;
+     background-color: black;
      color: white;
-     border: solid black;
      height: 2.5em;
      width: 4;
  }
