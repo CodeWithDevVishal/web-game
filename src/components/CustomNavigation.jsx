@@ -4,7 +4,7 @@ function CustomNavigation() {
   return (
     <div>
       <nav>
-        <a href="/">home</a>
+        <a href="">home</a>
       </nav>
     </div>
   )
