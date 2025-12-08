@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function CustomNavigation() {
   return (
     <div>
       <nav>
-        <a href="/web-game/">home</a>
+        <Link to="/web-game/">Home</Link>
       </nav>
     </div>
   )
