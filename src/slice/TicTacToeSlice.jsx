@@ -22,7 +22,9 @@ const TicTacToeSlice = createSlice(
             },
             reset: (state) => {
                 state.moves = state.temp
+                state.player = ""
             },
+            // ....................................................
             setPlayerOne: (state, { payload }) => {
                 state.playerOne = state.playerOne.concat(payload)
             },

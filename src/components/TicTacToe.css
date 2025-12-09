@@ -62,7 +62,8 @@
  }
 
  .block:hover {
-     background-color: rgba(0, 0, 0, 0.925);
+
+     box-shadow: inset white 0rem 0rem 0.1rem 0.1rem ;
  }
 
  @media screen and (max-width: 425px) {
